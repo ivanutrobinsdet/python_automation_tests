@@ -1,0 +1,16 @@
+[project]
+name = "testAutomationExample"
+version = "0.1.0"
+dependencies = [
+    "pytest>=8.3",
+    "requests>=2.34.2",
+    "pydantic>=2",
+    "pytest-check>=2.8.0",
+    "allure-pytest>=2.16.0"
+]
+[tool.pytest.ini_options]
+testpaths = ["/api/tests"]
+addopts = [
+    "--alluredir=allure-results",
+    "--clean-alluredir"
+]
